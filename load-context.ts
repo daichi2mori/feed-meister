@@ -1,7 +1,6 @@
 import { type PlatformProxy } from "wrangler";
 
-type Env = {};
-
+// biome-ignore lint/correctness/noUndeclaredVariables: <explanation>
 type Cloudflare = Omit<PlatformProxy<Env>, "dispose">;
 
 declare module "@remix-run/cloudflare" {
